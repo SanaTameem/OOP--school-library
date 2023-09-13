@@ -52,7 +52,7 @@ To get a local copy up and running, follow these steps.
 - Github
 - Git
 - Ruby
-- Linters
+- Linters 
 
 ### Prerequisites
 
