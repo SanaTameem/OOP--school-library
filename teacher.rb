@@ -12,10 +12,3 @@ class Teacher < Person
     true
   end
 end
-
-# teacher = Teacher.new(35,"Physics","John")
-# puts teacher.name
-# puts teacher.id
-# puts teacher.age
-# puts teacher.can_use_services?
-# puts teacher.specialization

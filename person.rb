@@ -20,10 +20,3 @@ class Person
     @age >= 18
   end
 end
-
-
-# person = Person.new(10,"sara")
-# puts person.name
-# puts person.id
-# puts person.age
-# puts person.can_use_services?

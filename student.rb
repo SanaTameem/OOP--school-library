@@ -13,12 +13,3 @@ class Student < Person
     '¯\(ツ)/¯'
   end
 end
-
-
-# student = Student.new(10,"D","Marwa")
-# puts student.name
-# puts student.id
-# puts student.age
-# puts student.can_use_services?
-# puts student.classroom
-# puts student.play_hooky
