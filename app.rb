@@ -11,6 +11,52 @@ class App
     @rentals = []
   end
 
+  def run
+    puts '------------------------------------------------------'
+    puts 'Welcome to School Library App!'
+    puts '------------------------------------------------------'
+    display_menu
+  end
+
+  def display_menu
+    loop do
+      puts "\nPlease choose an option by entering a number:"
+      puts '1 - List all books'
+      puts '2 - List all people'
+      puts '3 - Add a person'
+      puts '4 - Add a book'
+      puts '5 - Add a rental'
+      puts '6 - List all rentals for a given person id'
+      puts '7 - Exit'
+      option = gets.chomp.to_i
+      if option == 7
+        puts 'Thank you for using this app!'
+        break
+      else
+        choose_option(option)
+      end
+    end
+  end
+
+  def choose_option(option)
+    case option
+    when 1
+      list_all_books
+    when 2
+      list_all_people
+    when 3
+      create_person
+    when 4
+      create_book
+    when 5
+      create_rental
+    when 6
+      list_all_rentals
+    else
+      puts 'Invalid input, Please write an number from[1-7]'
+    end
+  end
+
   def list_all_books
     @books.each do |book|
       puts "Title: \"#{book.title}\", Author: #{book.author}"
