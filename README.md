@@ -40,6 +40,8 @@
 - [ ] **[Add new students or teachers.]**
 - [ ] **[Add new books.]**
 - [ ] **[Save records of who borrowed a given book and when.]**
+- [ ] **[Having a basic UI]**
+- [ ] **[Preserves data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,9 +98,6 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[add basic UI]**
-- [ ] **[refactor your code]**
-- [ ] **[preserve data]**
 - [ ] **[unit tests]**
 
 

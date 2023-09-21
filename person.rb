@@ -1,12 +1,11 @@
-require 'securerandom'
 require_relative 'nameable'
 class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age, :rentals
 
-  def initialize(age, name = 'Unknown', parent_permission: true)
+  def initialize(id, age, name = 'Unknown', parent_permission: true)
     super()
-    @id = SecureRandom.uuid
+    @id = id
     @name = name
     @age = age
     @parent_permission = parent_permission
@@ -23,6 +22,16 @@ class Person < Nameable
 
   def add_rental(date, book)
     @rentals.push(Rental.new(date, self, book)) unless @rentals.include?(Rental.new(date, self, book))
+  end
+
+  def to_json(options = {})
+    {
+      id: @id,
+      name: @name,
+      age: @age,
+      parent_permission: @parent_permission,
+      rentals: @rentals
+    }.to_json(options)
   end
 
   private
